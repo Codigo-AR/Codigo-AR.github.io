@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: 212325;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+    margin: 0;
+}
+
+h2#lema {
+    padding: 10px;
+    font-size: 55px;
+    text-align: center;
+}
+
+h2#descripcion {
+    padding: 7.5px;
+    font-size: 30px;
+    text-align: center;
+}
