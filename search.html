@@ -47,13 +47,16 @@
                                                                             <p class="hola">hola
                                                                                 
     <script>
-        title = document.querySelector('title')
         search = location.search.replace('?q=','').replace('+', ' ').replace('%C3%A1', 'á').replace('%C3%A9', 'é').replace('%C3%AD', 'í').replace('%C3%B3', 'ó').replace('%C3%BA', 'ú')
+        if (location.search === ""){
+            location.href = "https://Codigo-AR.github.io/#search-input"
+        }
+        title = document.querySelector('title')
         body = document.querySelector('body')
         
         title.innerHTML = search + "· Resultados de busqueda de Código AR"
         name = prompt('Introduzca su nombre completo:')
-        if (name = "") {
+        if (name === "") {
             name
         } else {
             body.innerHTML = "<h3>Usted (" + name + "), buscó :" + search + "</h3>"
