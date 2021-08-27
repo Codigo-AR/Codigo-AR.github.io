@@ -52,5 +52,10 @@
         body = document.querySelector('body')
         
         title.innerText = search + "· Resultados de busqueda de Código AR"
-        body.innerHTML = search
+        name = prompt('Introduzca su nombre completo:')
+        if (name = "") {
+            name
+        } else {
+            body.innerHTML = "<h3>Usted (" + name + "), buscó :" + search + "</h3>"
+        }
 </body>
