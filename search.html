@@ -48,7 +48,7 @@
                                                                                 
     <script>
         search = location.search.replace('?q=','').replace('+', ' ').replace('%C3%A1', 'á').replace('%C3%A9', 'é').replace('%C3%AD', 'í').replace('%C3%B3', 'ó').replace('%C3%BA', 'ú')
-        if (location.search === ""){
+        if (location.pathname === "/search"){
             location.href = "https://Codigo-AR.github.io/#search-input"
         }
         title = document.querySelector('title')
