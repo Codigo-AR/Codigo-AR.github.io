@@ -48,7 +48,7 @@
                                                                                 
     <script>
         search = location.search.replace('?q=','').replace('+', ' ').replace('%C3%A1', 'á').replace('%C3%A9', 'é').replace('%C3%AD', 'í').replace('%C3%B3', 'ó').replace('%C3%BA', 'ú')
-        if (location.pathname === "/search"){
+        if (location.search == ""){
             location.href = "https://Codigo-AR.github.io/#search-input"
         }
         title = document.querySelector('title')
@@ -56,8 +56,8 @@
         
         title.innerHTML = search + " · Resultados de busqueda de Código AR"
         name = prompt('Introduzca su nombre completo:')
-        if (name === "") {
-            name
+        if (name == "") {
+            name = prompt('Introduzca su nombre completo:')
         } else {
             body.innerHTML = "<h3>Usted (" + name + "), buscó: " + search + "</h3>"
         }
