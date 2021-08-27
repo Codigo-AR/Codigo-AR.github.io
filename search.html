@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Title -->
-    <title>Buscar en Código AR</title>
+    <title>Buscando...</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.ico">
@@ -51,7 +51,7 @@
         search = location.search.replace('?q=','')
         body = document.querySelector('body')
         
-        title.innerText = search + "· Resultados de busqueda de Código AR"
+        title.innerHTML = search + "· Resultados de busqueda de Código AR"
         name = prompt('Introduzca su nombre completo:')
         if (name = "") {
             name
