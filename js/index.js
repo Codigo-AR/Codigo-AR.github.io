@@ -1,6 +1,6 @@
 logo = '<img src="/img/logo.png" alt="Código AR">'
 
-// alert('!!! Atención,\n\rLa página web aún está en desarollo')
+alert('!!! Atención,\n\rLa página web aún está en desarollo')
 
 
 // NAV
